@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260630-05-8900874"}');</script>
+  <script src="/_sdk/e4192b04afde3ce7.telemetry_sdk.js" integrity="sha512-4eZpyKBd3YJnsIPrIpaBqo7QT5UZ6+KSFXkSu1IQiB7jKM8y67ChRhZ5Yh6JfuOJCbPdISiNcS6nLKZzIMG1uQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUMDesa Anuta Waya</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  
+  <style>
+      body { font-family: 'Poppins', sans-serif; color: #1e293b; background-color: #f8fafc; }
+      .font-display { font-family: 'Poppins', sans-serif; }
+      .hero-overlay { background: linear-gradient(160deg, rgba(6,78,43,0.85) 0%, rgba(15,23,42,0.7) 50%, rgba(120,53,15,0.5) 100%); }
+      .card-hover { transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s; }
+      .card-hover:hover { transform: translateY(-8px); box-shadow: 0 24px 48px rgba(0,0,0,0.12); }
+      .icon-box { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 14px; }
+      .stat-card { backdrop-filter: blur(12px); background: rgba(255,255,255,0.9); }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-up { animation: fadeUp 0.7s ease-out forwards; }
+      .delay-1 { animation-delay: 0.1s; opacity: 0; }
+      .delay-2 { animation-delay: 0.2s; opacity: 0; }
+      .delay-3 { animation-delay: 0.3s; opacity: 0; }
+      .divider-line { width: 60px; height: 4px; border-radius: 2px; }
+
+      .canva-text { color: inherit; }
+      .canva-footer { background-color: #064e3b; color: #f0fdf4; }
+      h1, h2, h3, h4 { color: #0f172a; }
+      .hero-overlay h2, .hero-overlay p, .hero-overlay span { color: #ffffff; }
+  </style>
+  <script src="/_sdk/48bf7c4c70d0d03c.data_sdk.js" type="text/javascript" integrity="sha512-e/yrQJz+prdXXt4yUvxXhl1WBGu3BRkP8X0fipGXI5gqiFClI7wI6K3TQnD7d63vx+BVhwzIvY6r8OrpX7lXJA=="></script>
+  <script src="/_sdk/5d8c692e132d2125.resizing_sdk.js" type="text/javascript" integrity="sha512-/Du3Fqe12kKsCd3BrbaNQEPtMxQi9S5hbJhnTf09AAilpqYsGa4N0rnimSX1Ui4dwNElKlen6VlI+E1n/NEfrA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen w-full">
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-gray-100">
+   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+     <div class="w-10 h-10 rounded-xl bg-emerald-700 flex items-center justify-center">
+      <i data-lucide="landmark" class="w-5 h-5 text-white"></i>
+     </div>
+     <h1 data-template-id="nav-title" class="canva-text font-display font-bold text-lg md:text-xl text-emerald-900">BUMDesa Anuta Waya</h1>
+    </div>
+    <div class="hidden md:flex gap-8 items-center">
+     <a href="#tentang" data-template-id="nav-about" class="canva-link text-sm font-medium text-gray-600 hover:text-emerald-700 transition-colors">Tentang</a> 
+     <a href="#program" data-template-id="nav-programs" class="canva-link text-sm font-medium text-gray-600 hover:text-emerald-700 transition-colors">Program</a> 
+     <a href="#kontak" data-template-id="nav-contact" class="canva-link text-sm font-medium text-gray-600 hover:text-emerald-700 transition-colors">Kontak</a>
+    </div>
+   </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative w-full overflow-hidden" style="height: calc(90 * min(var(--vh, 1vh), 1vh)); min-height: 500px;">
+   <img data-template-id="hero-img" class="canva-image absolute inset-0 w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1600" alt="Sawah Pedesaan">
+   <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+    <div class="text-center px-6 max-w-4xl animate-fade-up">
+     <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 mb-6">
+      <i data-lucide="sprout" class="w-4 h-4 text-emerald-300"></i> 
+      <span data-template-id="hero-badge" class="canva-text text-sm font-medium text-white/90">Pemberdayaan Ekonomi Desa</span>
+     </div>
+     <h2 data-template-id="hero-title" class="canva-text font-display text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Membangun Desa Mandiri & Sejahtera</h2>
+     <p data-template-id="hero-subtitle" class="canva-text text-white/95 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed">BUMDesa Anuta Waya berkomitmen memaksimalkan seluruh potensi lokal demi menggerakkan ekonomi warga yang maju, inovatif, dan berdaya saing.</p>
+    </div>
+   </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <section class="relative -mt-16 z-10 px-6">
+   <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div data-template-id="stat-1" class="canva-card stat-card rounded-2xl p-6 shadow-lg border border-gray-100 flex items-center gap-4 animate-fade-up delay-1">
+     <div class="icon-box bg-emerald-100 shrink-0">
+      <i data-lucide="users" class="w-6 h-6 text-emerald-700"></i>
+     </div>
+     <div>
+      <p data-template-id="stat-1-value" class="canva-text font-bold text-2xl text-emerald-900">120+</p>
+      <p data-template-id="stat-1-label" class="canva-text text-sm text-gray-500 font-medium">Mitra UMKM Lokal</p>
+     </div>
+    </div>
+    <div data-template-id="stat-2" class="canva-card stat-card rounded-2xl p-6 shadow-lg border border-gray-100 flex items-center gap-4 animate-fade-up delay-2">
+     <div class="icon-box bg-amber-100 shrink-0">
+      <i data-lucide="briefcase" class="w-6 h-6 text-amber-700"></i>
+     </div>
+     <div>
+      <p data-template-id="stat-2-value" class="canva-text font-bold text-2xl text-amber-900">5 Unit</p>
+      <p data-template-id="stat-2-label" class="canva-text text-sm text-gray-500 font-medium">Usaha Produktif</p>
+     </div>
+    </div>
+    <div data-template-id="stat-3" class="canva-card stat-card rounded-2xl p-6 shadow-lg border border-gray-100 flex items-center gap-4 animate-fade-up delay-3">
+     <div class="icon-box bg-sky-100 shrink-0">
+      <i data-lucide="trending-up" class="w-6 h-6 text-sky-700"></i>
+     </div>
+     <div>
+      <p data-template-id="stat-3-value" class="canva-text font-bold text-2xl text-sky-900">Rp 450 Jt</p>
+      <p data-template-id="stat-3-label" class="canva-text text-sm text-gray-500 font-medium">PADesa / Tahun</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <main>
+   <!-- About -->
+   <section id="tentang" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+     <div class="relative">
+      <img data-template-id="about-img" class="canva-image w-full h-96 object-cover rounded-3xl shadow-xl" loading="lazy" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200" alt="Gotong Royong Desa">
+      <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-emerald-700/10 -z-10"></div>
+     </div>
+     <div>
+      <div data-template-id="about-accent" class="divider-line mb-4 bg-emerald-600"></div>
+      <h3 data-template-id="about-heading" class="canva-text font-display font-bold mb-5 text-3xl md:text-4xl text-slate-900">Mengenal Lebih Dekat BUMDesa Anuta Waya</h3>
+      <p data-template-id="about-text" class="canva-text leading-relaxed mb-6 text-gray-600">BUMDesa Anuta Waya didirikan sebagai motor penggerak ekonomi desa yang inklusif. Kami berfokus mengelola dan mengoptimalkan potensi lokal secara transparan dan akuntabel demi kemakmuran bersama, melayani seluruh kebutuhan masyarakat desa dengan semangat integritas tinggi.</p>
+      <div class="flex flex-wrap gap-4">
+       <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-full">
+        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> 
+        <span data-template-id="about-tag-1" class="canva-tag text-sm font-medium text-emerald-800">Transparan & Terbuka</span>
+       </div>
+       <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-full">
+        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> 
+        <span data-template-id="about-tag-2" class="canva-tag text-sm font-medium text-emerald-800">Pemberdayaan UMKM</span>
+       </div>
+       <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-full">
+        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> 
+        <span data-template-id="about-tag-3" class="canva-tag text-sm font-medium text-emerald-800">Teknologi Terintegrasi</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Programs -->
+   <section id="program" data-template-id="programs-section" class="canva-section py-24 px-6 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+     <div class="text-center mb-14">
+      <h3 data-template-id="programs-heading" class="canva-text font-display font-bold mb-4 text-3xl md:text-4xl text-slate-900">Program & Unit Usaha Unggulan</h3>
+      <p data-template-id="programs-subtitle" class="canva-text max-w-2xl mx-auto text-gray-600 leading-relaxed">Inovasi tak henti untuk mengoptimalkan keunggulan lokal dan menggerakkan roda ekonomi desa. Adapun Program unggulan yang menjadi target dari program kami adalah:</p>
+     </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1: Peternakan -->
+      <div data-template-id="card-1" class="canva-card card-hover rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white">
+       <div class="relative">
+        <img data-template-id="card-1-img" class="canva-image w-full h-52 object-cover" loading="lazy" src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&q=80&w=800" alt="Peternakan">
+        <div class="absolute top-4 left-4 icon-box bg-white/90 backdrop-blur-sm shadow-sm">
+         <i data-lucide="paw-print" class="w-5 h-5 text-amber-700"></i>
+        </div>
+       </div>
+       <div class="p-6">
+        <h4 data-template-id="card-1-title" class="canva-text font-bold text-lg mb-2 text-slate-900">Peternakan</h4>
+        <p data-template-id="card-1-desc" class="canva-text text-sm leading-relaxed text-gray-500">Pengembangan budidaya hewan ternak secara modern, penyediaan pakan berkualitas, serta jaminan kesehatan hewan demi hasil produksi unggulan.</p>
+       </div>
+      </div>
+      <!-- Card 2: Pertanian -->
+      <div data-template-id="card-2" class="canva-card card-hover rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white">
+       <div class="relative">
+        <img data-template-id="card-2-img" class="canva-image w-full h-52 object-cover" loading="lazy" src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800" alt="Pertanian">
+        <div class="absolute top-4 left-4 icon-box bg-white/90 backdrop-blur-sm shadow-sm">
+         <i data-lucide="wheat" class="w-5 h-5 text-emerald-700"></i>
+        </div>
+       </div>
+       <div class="p-6">
+        <h4 data-template-id="card-2-title" class="canva-text font-bold text-lg mb-2 text-slate-900">Pertanian</h4>
+        <p data-template-id="card-2-desc" class="canva-text text-sm leading-relaxed text-gray-500">Pemberian edukasi pasca-panen, distribusi pupuk dan bibit terjangkau, serta pembukaan jalur pemasaran adil untuk petani lokal.</p>
+       </div>
+      </div>
+      <!-- Card 3: Perikanan -->
+      <div data-template-id="card-3" class="canva-card card-hover rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white">
+       <div class="relative">
+        <img data-template-id="card-3-img" class="canva-image w-full h-52 object-cover" loading="lazy" src="https://images.unsplash.com/photo-1534570122585-3ec6cd1349b3?auto=format&fit=crop&q=80&w=800" alt="Perikanan">
+        <div class="absolute top-4 left-4 icon-box bg-white/90 backdrop-blur-sm shadow-sm">
+         <i data-lucide="fish" class="w-5 h-5 text-sky-700"></i>
+        </div>
+       </div>
+       <div class="p-6">
+        <h4 data-template-id="card-3-title" class="canva-text font-bold text-lg mb-2 text-slate-900">Perikanan</h4>
+        <p data-template-id="card-3-desc" class="canva-text text-sm leading-relaxed text-gray-500">Optimalisasi budidaya perikanan air tawar lokal melalui sistem kolam terintegrasi dan teknologi pengelolaan pakan mandiri.</p>
+       </div>
+      </div>
+      <!-- Card 4: Retail -->
+      <div data-template-id="card-4" class="canva-card card-hover rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white">
+       <div class="relative">
+        <img data-template-id="card-4-img" class="canva-image w-full h-52 object-cover" loading="lazy" src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800" alt="Retail">
+        <div class="absolute top-4 left-4 icon-box bg-white/90 backdrop-blur-sm shadow-sm">
+         <i data-lucide="store" class="w-5 h-5 text-rose-700"></i>
+        </div>
+       </div>
+       <div class="p-6">
+        <h4 data-template-id="card-4-title" class="canva-text font-bold text-lg mb-2 text-slate-900">Retail</h4>
+        <p data-template-id="card-4-desc" class="canva-text text-sm leading-relaxed text-gray-500">Menyediakan kebutuhan pokok harian warga dengan harga grosir serta menjadi wadah pemasaran langsung produk UMKM lokal.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Contact -->
+   <section id="kontak" class="py-24 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+     <h3 data-template-id="contact-heading" class="canva-text font-display font-bold mb-3 text-3xl md:text-4xl text-slate-900">Hubungi Kami</h3>
+     <p data-template-id="contact-text" class="canva-text mb-10 max-w-lg mx-auto text-gray-500">Ada rencana kolaborasi atau butuh informasi? Layanan administrasi dan kemitraan kami siap membantu.</p>
+     <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+      <div data-template-id="contact-card-1" class="canva-card flex items-center gap-4 p-5 rounded-2xl border border-gray-100 shadow-sm bg-slate-50">
+       <div class="icon-box bg-emerald-100 shrink-0">
+        <i data-lucide="map-pin" class="w-5 h-5 text-emerald-700"></i>
+       </div>
+       <span data-template-id="contact-address" class="canva-text text-sm text-left text-slate-700">Jaga 1 Mopolo, Kecamatan Ranoyapo, Kabupaten Minahasa Selatan, Sulawesi Utara</span>
+      </div>
+      <div data-template-id="contact-card-2" class="canva-card flex items-center gap-4 p-5 rounded-2xl border border-gray-100 shadow-sm bg-slate-50">
+       <div class="icon-box bg-emerald-100 shrink-0">
+        <i data-lucide="phone" class="w-5 h-5 text-emerald-700"></i>
+       </div>
+       <span data-template-id="contact-phone" class="canva-text text-sm text-slate-700 font-semibold">+62 821-8888-9900</span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+
+  <!-- Footer -->
+  <footer data-template-id="footer" class="canva-footer py-12 px-6">
+   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+     <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+      <i data-lucide="landmark" class="w-5 h-5 text-emerald-200"></i>
+     </div>
+     <p data-template-id="footer-text" class="canva-text text-sm text-emerald-100 font-medium">© 2026 BUMDesa Anuta Waya. Semua Hak Dilindungi. Didukung Pemerintah Desa.</p>
+    </div>
+    <div class="flex gap-4">
+     <div class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer flex items-center justify-center transition-colors">
+      <i data-lucide="facebook" class="w-4 h-4 text-emerald-200"></i>
+     </div>
+     <div class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer flex items-center justify-center transition-colors">
+      <i data-lucide="instagram" class="w-4 h-4 text-emerald-200"></i>
+     </div>
+    </div>
+   </div>
+  </footer>
+
+  <script src="/_sdk/c94a279e896d0a23.editing_sdk.js" integrity="sha512-uhzUP50YzTVKO+Zk7rEhhvjMMNFy592eHXVEXciJzhLpIQxrlwzWv/DQvyYWQ+AKpYwxxCvjgWkVa5LTga2NWg=="></script>
+  
+  <script>
+      // Jalankan inisialisasi ikon Lucide bawaan
+      lucide.createIcons();
+
+      // Smooth scroll untuk navigasi
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+          a.addEventListener('click', e => {
+              e.preventDefault();
+              document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+          });
+      });
+
+      // Dinamis viewport height demi keindahan tampilan mobile header
+      const setVh = () => {
+          let vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+      };
+      window.addEventListener('resize', setVh);
+      window.addEventListener('orientationchange', setVh);
+      setVh();
+
+      // Skenario Hidrasi Cadangan (Fallback Hydration) jika SDK Eksternal Canva tidak aktif
+      document.addEventListener('DOMContentLoaded', () => {
+          const navTitle = document.querySelector('[data-template-id="nav-title"]');
+          // Jika data-template masih kosong (tidak terisi oleh SDK eksternal), lakukan hidrasi cadangan
+          if (navTitle && !navTitle.textContent.trim()) {
+              const defaultData = {
+                  "nav-title": "BUMDesa Anuta Waya",
+                  "nav-about": "Tentang Kami",
+                  "nav-programs": "Unit Usaha",
+                  "nav-contact": "Hubungi Kami",
+                  "hero-badge": "Pemberdayaan Ekonomi Desa",
+                  "hero-title": "Sinergi Membangun Ekonomi Desa Mandiri",
+                  "hero-subtitle": "BUMDesa Anuta Waya hadir sebagai motor penggerak ekonomi, memaksimalkan potensi lokal, serta mendampingi kemandirian UMKM warga secara berkelanjutan.",
+                  "stat-1-value": "120+",
+                  "stat-1-label": "Mitra UMKM Binaan",
+                  "stat-2-value": "5 Unit",
+                  "stat-2-label": "Usaha Desa Produktif",
+                  "stat-3-value": "Rp 450 Jt+",
+                  "stat-3-label": "PADesa Per Tahun",
+                  "about-heading": "Mendorong Kesejahteraan Bersama",
+                  "about-text": "BUMDesa Anuta Waya didirikan dengan semangat gotong royong untuk mengelola aset dan potensi ekonomi Desa. Melalui optimalisasi sektor pertanian, perdagangan retail desa, serta pemanfaatan pariwisata daerah, kami berkomitmen menciptakan kemandirian sosial dan ekonomi demi masa depan desa yang lebih makmur.",
+                  "about-tag-1": "Pengelolaan Transparan",
+                  "about-tag-2": "Pemberdayaan Warga",
+                  "about-tag-3": "Ekosistem Digital",
+                  "programs-heading": "Program & Unit Usaha Unggulan",
+                  "programs-subtitle": "Inovasi tak henti untuk mengoptimalkan keunggulan lokal dan menggerakkan roda ekonomi desa. Adapun Program unggulan yang menjadi target dari program kami adalah:",
+                  "card-1-title": "Peternakan",
+                  "card-1-desc": "Pengembangan budidaya hewan ternak secara modern, penyediaan pakan berkualitas, serta jaminan kesehatan hewan demi hasil produksi unggulan.",
+                  "card-2-title": "Pertanian",
+                  "card-2-desc": "Pemberian edukasi pasca-panen, distribusi pupuk dan bibit terjangkau, serta pembukaan jalur pemasaran adil untuk petani lokal.",
+                  "card-3-title": "Perikanan",
+                  "card-3-desc": "Optimalisasi budidaya perikanan air tawar lokal melalui sistem kolam terintegrasi dan teknologi pengelolaan pakan mandiri.",
+                  "card-4-title": "Retail",
+                  "card-4-desc": "Menyediakan kebutuhan pokok harian warga dengan harga grosir serta menjadi wadah pemasaran langsung produk UMKM lokal.",
+                  "contact-heading": "Mari Berkolaborasi",
+                  "contact-text": "Pintu kami selalu terbuka untuk kemitraan, investasi, dan inovasi bersama. Hubungi tim representatif BUMDesa Anuta Waya kapan saja.",
+                  "contact-address": "Jaga 1 Mopolo, Kecamatan Ranoyapo, Kabupaten Minahasa Selatan, Sulawesi Utara",
+                  "contact-phone": "+62 821-8888-9900",
+                  "footer-text": "© 2026 BUMDesa Anuta Waya. Semua Hak Dilindungi. Didukung Pemerintah Desa."
+              };
+
+              // Tulis text cadangan
+              Object.keys(defaultData).forEach(id => {
+                  const element = document.querySelector(`[data-template-id="${id}"]`);
+                  if (element) {
+                      element.textContent = defaultData[id];
+                  }
+              });
+
+              // Sediakan URL gambar cadangan resolusi tinggi
+              const defaultImages = {
+                  "hero-img": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1600",
+                  "about-img": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200",
+                  "card-1-img": "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&q=80&w=800",
+                  "card-2-img": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800",
+                  "card-3-img": "https://images.unsplash.com/photo-1534570122585-3ec6cd1349b3?auto=format&fit=crop&q=80&w=800",
+                  "card-4-img": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800"
+              };
+
+              // Pasangkan gambar cadangan
+              Object.keys(defaultImages).forEach(id => {
+                  const img = document.querySelector(`[data-template-id="${id}"]`);
+                  if (img) {
+                      img.src = defaultImages[id];
+                      img.alt = id.replace("-img", "");
+                  }
+              });
+
+              // Jalankan ulang ikon setelah penulisan DOM selesai agar seluruh ikon termuat
+              lucide.createIcons();
+          }
+      });
+  </script>
+
+  <!-- Skenario Integrasi Cloudflare / Keamanan Tambahan -->
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a13d292f369df91e',t:'MTc4MjgyMjQwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ </body>
+</html>
